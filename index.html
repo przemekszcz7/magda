@@ -126,7 +126,7 @@
       .logo-link {
         display: flex;
         align-items: center;
-        gap: 1rem;
+        gap: 0.85rem;
       }
 
       .logo-img {
@@ -145,16 +145,27 @@
       }
 
       .logo-text {
-        font-family: var(--font-serif);
-        font-size: 1.6rem;
-        letter-spacing: 0.08em;
-        text-transform: uppercase;
-        color: var(--color-charcoal);
+        display: flex;
+        flex-direction: column;
+        line-height: 1.1;
       }
 
-      .logo-text span {
-        font-weight: 300;
-        color: var(--color-gold);
+      .logo-text-top {
+        font-family: var(--font-sans);
+        font-size: 0.65rem;
+        letter-spacing: 0.22em;
+        text-transform: uppercase;
+        color: var(--color-gold-dark);
+        font-weight: 600;
+      }
+
+      .logo-text-bottom {
+        font-family: var(--font-serif);
+        font-size: 1.5rem;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: var(--color-charcoal);
+        font-weight: 400;
       }
 
       /* Navigation menu */
@@ -1499,7 +1510,31 @@
       /* Mobile Navigation Overlay using CSS Hack */
       @media (max-width: 991px) {
         .header-container {
-          height: 80px;
+          height: 75px;
+          padding: 0 1rem;
+        }
+
+        .logo-img {
+          width: 42px;
+          height: 42px;
+        }
+
+        .logo-link {
+          gap: 0.5rem;
+        }
+
+        .logo-text {
+          white-space: nowrap;
+        }
+
+        .logo-text-top {
+          font-size: 0.55rem;
+          letter-spacing: 0.18em;
+        }
+
+        .logo-text-bottom {
+          font-size: 1.15rem;
+          letter-spacing: 0.02em;
         }
         
         /* Mobile hamburger menu */
@@ -1583,7 +1618,143 @@
           top: 0;
         }
 
-        /* Hide menu when anchor is clicked (handled via CSS hack can't close natively without JS, but the close button exists or they can just toggle the checkbox. On same-page links, closing on navigation can be done via checkbox or the user manually toggles it. For mobile users we can provide a small visual instruction or it naturally fits standard behavior). */
+        /* General layout corrections for mobile */
+        .container {
+          padding: 0 1.25rem;
+        }
+
+        section {
+          padding: 4.5rem 0;
+        }
+
+        /* Hero section mobile corrections */
+        #hero {
+          padding: 100px 0 40px 0;
+        }
+
+        .scroll-indicator {
+          display: none !important;
+        }
+
+        .hero-content {
+          padding: 2rem 1.25rem;
+          border-radius: 18px;
+        }
+
+        .hero-content h1 {
+          font-size: 2.3rem !important;
+          line-height: 1.2;
+          margin-bottom: 1rem;
+        }
+
+        .hero-desc {
+          font-size: 1.15rem;
+          margin-bottom: 2rem;
+        }
+
+        .hero-actions {
+          flex-direction: column;
+          gap: 0.85rem;
+          margin-bottom: 2.5rem;
+        }
+
+        .hero-actions .btn {
+          width: 100%;
+          justify-content: center;
+        }
+
+        .hero-badges {
+          grid-template-columns: repeat(2, 1fr);
+          gap: 0.75rem;
+        }
+
+        /* Section titles */
+        .section-title {
+          font-size: 2.2rem;
+          line-height: 1.2;
+        }
+
+        .section-desc {
+          font-size: 0.95rem;
+          margin-bottom: 2.5rem;
+        }
+
+        /* About section collage scaling */
+        .about-images-collage {
+          height: 380px;
+        }
+
+        .collage-1 {
+          height: 280px;
+        }
+
+        .collage-2 {
+          height: 220px;
+        }
+
+        /* Order Banner stacked layout */
+        .online-order-banner {
+          padding: 2rem 1.25rem;
+          margin-top: 3.5rem;
+          gap: 1.5rem;
+        }
+
+        .banner-info {
+          flex-direction: column;
+          gap: 1rem;
+          text-align: center;
+        }
+
+        .banner-icon {
+          width: 50px;
+          height: 50px;
+          font-size: 1.5rem;
+        }
+
+        .banner-text h3 {
+          font-size: 1.5rem;
+        }
+
+        /* Card and section layout grids */
+        .about-grid, .kontakt-grid {
+          gap: 2.5rem;
+        }
+
+        .about-highlights {
+          grid-template-columns: 1fr;
+          gap: 1.25rem;
+          margin-top: 2rem;
+        }
+
+        .kontakt-info-card {
+          padding: 2rem 1.25rem;
+        }
+
+        /* Gallery sizing on mobile */
+        .gallery-item {
+          height: 310px;
+          padding: 1rem;
+        }
+
+        /* CTA Banner */
+        #cta-banner {
+          padding: 5rem 1.25rem;
+        }
+
+        .cta-content h2 {
+          font-size: 2.2rem;
+        }
+
+        .cta-content p {
+          font-size: 1.15rem;
+          margin-bottom: 2rem;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .hero-badges {
+          grid-template-columns: 1fr;
+        }
       }
     </style>
   </head>
@@ -1594,7 +1765,10 @@
       <div class="header-container">
         <a href="#hero" class="logo-link">
           <img src="https://i.ibb.co/TMpVb6pm/615119126-122158590536803331-4099207766409801-n.jpg" alt="Kwiaciarnia MAGDA" class="logo-img">
-          <div class="logo-text">Kwiaciarnia <span>Magda</span></div>
+          <div class="logo-text">
+            <span class="logo-text-top">Kwiaciarnia</span>
+            <span class="logo-text-bottom">Magda</span>
+          </div>
         </a>
 
         <!-- Checkbox Hack for Mobile Menu Toggle -->
@@ -2227,7 +2401,10 @@
       <div class="footer-container">
         <div class="footer-logo">
           <img src="https://i.ibb.co/TMpVb6pm/615119126-122158590536803331-4099207766409801-n.jpg" alt="Logo Kwiaciarnia Magda" class="footer-logo-img">
-          <div class="footer-logo-text">Kwiaciarnia <span>Magda</span></div>
+          <div class="footer-logo-text" style="display: flex; flex-direction: column; line-height: 1.1;">
+            <span style="font-family: var(--font-sans); font-size: 0.6rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--color-gold); font-weight: 500;">Kwiaciarnia</span>
+            <span style="font-family: var(--font-serif); font-size: 1.25rem; letter-spacing: 0.04em; text-transform: uppercase; color: var(--color-white); font-weight: 400;">Magda</span>
+          </div>
         </div>
         
         <div class="footer-copy">
@@ -2240,6 +2417,18 @@
         </div>
       </div>
     </footer>
+
+    <!-- Mobile Navigation Auto-Collapse Script -->
+    <script>
+      document.querySelectorAll('nav a').forEach(link => {
+        link.addEventListener('click', () => {
+          const checkbox = document.getElementById('menu-btn');
+          if (checkbox && checkbox.checked) {
+            checkbox.checked = false;
+          }
+        });
+      });
+    </script>
 
   </body>
 </html>
