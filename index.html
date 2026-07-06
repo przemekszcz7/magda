@@ -1,0 +1,2245 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- SEO & Meta Tags -->
+    <title>Kwiaciarnia MAGDA Tuszyn — Ekskluzywna Pracownia Florystyczna</title>
+    <meta name="description" content="Kwiaciarnia MAGDA w Tuszynie to ekskluzywna pracownia florystyczna. Tworzymy niepowtarzalne bukiety okolicznościowe, florystykę ślubną i kompozycje z pasją." />
+    <meta name="keywords" content="kwiaciarnia Tuszyn, bukiety ślubne Tuszyn, kwiaty żywe, kwiaty sztuczne, kompozycje kwiatowe, pracownia florystyczna" />
+    <meta name="author" content="Kwiaciarnia MAGDA" />
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Kwiaciarnia MAGDA Tuszyn — Ekskluzywna Pracownia Florystyczna" />
+    <meta property="og:description" content="Podaruj emocje w bukiecie. Wyjątkowe kompozycje kwiatowe tworzone z pasją i sercem na każdą okazję." />
+    <meta property="og:image" content="https://i.ibb.co/TMpVb6pm/615119126-122158590536803331-4099207766409801-n.jpg" />
+    <meta property="og:type" content="website" />
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpeg" href="https://i.ibb.co/TMpVb6pm/615119126-122158590536803331-4099207766409801-n.jpg" />
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS styles -->
+    <style>
+      :root {
+        --color-white: #ffffff;
+        --color-cream-light: #fefcf9;
+        --color-cream: #faf5ef;
+        --color-cream-dark: #f0e4d7;
+        --color-pink-light: #fbf1f2;
+        --color-pink: #f7e1e3;
+        --color-pink-dark: #ecd0d3;
+        --color-peach: #fdf4f0;
+        --color-peach-dark: #fcded0;
+        --color-sage-light: #f1f5f0;
+        --color-sage: #e2e9e1;
+        --color-sage-dark: #cbdad0;
+        --color-olive: #6e7f6e;
+        --color-olive-dark: #4f5d4f;
+        --color-gold: #c5a059;
+        --color-gold-light: #e4cc9f;
+        --color-gold-dark: #a27e3b;
+        --color-charcoal: #2c2f2c;
+        --color-text: #3c403c;
+        --font-serif: 'Cormorant Garamond', serif;
+        --font-sans: 'Montserrat', sans-serif;
+        --transition-soft: all 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+        --transition-fast: all 0.25s ease;
+      }
+
+      /* Global Reset & Base Styling */
+      *, *::before, *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      html {
+        scroll-behavior: smooth;
+        font-size: 16px;
+      }
+
+      body {
+        font-family: var(--font-sans);
+        background-color: var(--color-cream-light);
+        color: var(--color-text);
+        line-height: 1.7;
+        overflow-x: hidden;
+      }
+
+      /* Typography */
+      h1, h2, h3, h4, h5 {
+        font-family: var(--font-serif);
+        font-weight: 400;
+        color: var(--color-charcoal);
+        letter-spacing: 0.03em;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+        transition: var(--transition-fast);
+      }
+
+      /* Base Layout Elements */
+      .container {
+        width: 100%;
+        max-width: 1300px;
+        margin: 0 auto;
+        padding: 0 2rem;
+      }
+
+      section {
+        padding: 8rem 0;
+        position: relative;
+      }
+
+      /* Header / Navigation */
+      header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+        background: rgba(254, 252, 249, 0.85);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border-bottom: 1px solid rgba(240, 228, 215, 0.5);
+        transition: var(--transition-soft);
+      }
+
+      .header-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 90px;
+        padding: 0 2rem;
+        max-width: 1400px;
+        margin: 0 auto;
+      }
+
+      .logo-link {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+      }
+
+      .logo-img {
+        width: 54px;
+        height: 54px;
+        border-radius: 50%;
+        object-fit: cover;
+        box-shadow: 0 4px 12px rgba(79, 93, 79, 0.15);
+        border: 2px solid var(--color-white);
+        transition: var(--transition-soft);
+      }
+
+      .logo-link:hover .logo-img {
+        transform: scale(1.05);
+        box-shadow: 0 6px 16px rgba(197, 160, 89, 0.3);
+      }
+
+      .logo-text {
+        font-family: var(--font-serif);
+        font-size: 1.6rem;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: var(--color-charcoal);
+      }
+
+      .logo-text span {
+        font-weight: 300;
+        color: var(--color-gold);
+      }
+
+      /* Navigation menu */
+      nav ul {
+        display: flex;
+        gap: 2.5rem;
+        list-style: none;
+        align-items: center;
+      }
+
+      nav a {
+        font-size: 0.85rem;
+        text-transform: uppercase;
+        letter-spacing: 0.15em;
+        font-weight: 500;
+        color: var(--color-olive-dark);
+        position: relative;
+        padding: 0.5rem 0;
+      }
+
+      nav a::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        width: 0;
+        height: 1px;
+        background-color: var(--color-gold);
+        transition: var(--transition-fast);
+        transform: translateX(-50%);
+      }
+
+      nav a:hover {
+        color: var(--color-gold-dark);
+      }
+
+      nav a:hover::after {
+        width: 100%;
+      }
+
+      /* Mobile Navigation Hack */
+      .menu-btn, .menu-icon {
+        display: none;
+      }
+
+      /* Buttons & CTA UI Elements */
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1.1rem 2.4rem;
+        font-family: var(--font-sans);
+        font-size: 0.8rem;
+        font-weight: 500;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: var(--transition-soft);
+        border: 1px solid transparent;
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+      }
+
+      .btn-primary {
+        background-color: var(--color-olive);
+        color: var(--color-white);
+        box-shadow: 0 10px 25px -5px rgba(110, 127, 110, 0.3);
+      }
+
+      .btn-primary::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: var(--color-olive-dark);
+        z-index: -1;
+        transform: scaleX(0);
+        transform-origin: right;
+        transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+      }
+
+      .btn-primary:hover::before {
+        transform: scaleX(1);
+        transform-origin: left;
+      }
+
+      .btn-primary:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 15px 30px -5px rgba(79, 93, 79, 0.4);
+      }
+
+      .btn-outline {
+        background-color: transparent;
+        color: var(--color-olive-dark);
+        border-color: var(--color-olive);
+      }
+
+      .btn-outline::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: var(--color-olive);
+        z-index: -1;
+        transform: scaleY(0);
+        transform-origin: bottom;
+        transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+      }
+
+      .btn-outline:hover::before {
+        transform: scaleY(1);
+        transform-origin: top;
+      }
+
+      .btn-outline:hover {
+        color: var(--color-white);
+        transform: translateY(-3px);
+        box-shadow: 0 10px 25px -5px rgba(110, 127, 110, 0.2);
+      }
+
+      .btn-gold {
+        background-color: var(--color-white);
+        color: var(--color-gold-dark);
+        border-color: var(--color-gold);
+        box-shadow: 0 10px 25px -5px rgba(197, 160, 89, 0.15);
+      }
+
+      .btn-gold:hover {
+        background-color: var(--color-gold);
+        color: var(--color-white);
+        transform: translateY(-3px);
+        box-shadow: 0 15px 30px -5px rgba(197, 160, 89, 0.35);
+      }
+
+      /* Hero Section */
+      #hero {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: url('https://i.ibb.co/Lhv4P4tb/646768658-122163662822803331-4802370141749419693-n.jpg');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        padding: 100px 0 50px 0;
+        position: relative;
+      }
+
+      /* Light transparent overlay */
+      .hero-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(135deg, rgba(254, 252, 249, 0.88) 0%, rgba(247, 225, 227, 0.78) 50%, rgba(253, 243, 238, 0.85) 100%);
+        z-index: 1;
+      }
+
+      .hero-content {
+        position: relative;
+        z-index: 2;
+        max-width: 850px;
+        text-align: center;
+        margin: 0 auto;
+        padding: 3rem;
+        background: rgba(255, 255, 255, 0.55);
+        border-radius: 24px;
+        backdrop-filter: blur(15px);
+        -webkit-backdrop-filter: blur(15px);
+        border: 1px solid rgba(255, 255, 255, 0.6);
+        box-shadow: 0 20px 50px rgba(79, 93, 79, 0.06);
+        animation: scaleIn 1.2s cubic-bezier(0.25, 1, 0.5, 1) both;
+      }
+
+      /* Hero Logo */
+      .hero-logo-container {
+        margin-bottom: 1.5rem;
+        animation: fadeInUp 1s ease 0.2s both;
+      }
+
+      .hero-logo {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 4px solid var(--color-white);
+        box-shadow: 0 10px 25px rgba(79, 93, 79, 0.18);
+      }
+
+      .hero-subtitle-top {
+        font-family: var(--font-sans);
+        font-size: 0.8rem;
+        font-weight: 600;
+        letter-spacing: 0.3em;
+        text-transform: uppercase;
+        color: var(--color-gold-dark);
+        margin-bottom: 1rem;
+        display: block;
+        animation: fadeInUp 1s ease 0.1s both;
+      }
+
+      .hero-content h1 {
+        font-size: 4rem;
+        line-height: 1.1;
+        margin-bottom: 1.5rem;
+        color: var(--color-charcoal);
+        animation: fadeInUp 1s ease 0.3s both;
+      }
+
+      .hero-content h1 span {
+        font-weight: 300;
+        font-style: italic;
+        color: var(--color-olive);
+      }
+
+      .hero-desc {
+        font-family: var(--font-serif);
+        font-size: 1.6rem;
+        font-weight: 300;
+        font-style: italic;
+        color: var(--color-olive-dark);
+        margin-bottom: 2.5rem;
+        line-height: 1.5;
+        animation: fadeInUp 1s ease 0.5s both;
+      }
+
+      .hero-actions {
+        display: flex;
+        justify-content: center;
+        gap: 1.5rem;
+        margin-bottom: 3.5rem;
+        animation: fadeInUp 1s ease 0.7s both;
+      }
+
+      /* Hero Badges */
+      .hero-badges {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        max-width: 650px;
+        margin: 0 auto;
+        animation: fadeInUp 1s ease 0.9s both;
+      }
+
+      @media (min-width: 768px) {
+        .hero-badges {
+          grid-template-columns: repeat(4, 1fr);
+        }
+        .hero-content h1 {
+          font-size: 5rem;
+        }
+      }
+
+      .badge-item {
+        background-color: rgba(255, 255, 255, 0.8);
+        border: 1px solid rgba(197, 160, 89, 0.25);
+        border-radius: 50px;
+        padding: 0.6rem 1rem;
+        font-size: 0.75rem;
+        font-weight: 500;
+        color: var(--color-charcoal);
+        letter-spacing: 0.05em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.02);
+        transition: var(--transition-fast);
+      }
+
+      .badge-item:hover {
+        transform: translateY(-2px);
+        background-color: var(--color-white);
+        border-color: var(--color-gold);
+        box-shadow: 0 8px 15px rgba(197, 160, 89, 0.12);
+      }
+
+      /* Animated Scroll Indicator */
+      .scroll-indicator {
+        position: absolute;
+        bottom: 2rem;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+        color: var(--color-olive-dark);
+        font-size: 0.7rem;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        font-weight: 500;
+        opacity: 0.8;
+      }
+
+      .scroll-mouse {
+        width: 22px;
+        height: 38px;
+        border: 2px solid var(--color-olive);
+        border-radius: 12px;
+        position: relative;
+      }
+
+      .scroll-wheel {
+        width: 4px;
+        height: 8px;
+        background-color: var(--color-gold);
+        border-radius: 2px;
+        position: absolute;
+        top: 6px;
+        left: 50%;
+        transform: translateX(-50%);
+        animation: scrollWheelAnim 1.6s infinite ease-in-out;
+      }
+
+      @keyframes scrollWheelAnim {
+        0% { top: 6px; opacity: 1; }
+        50% { top: 20px; opacity: 0; }
+        100% { top: 6px; opacity: 1; }
+      }
+
+      /* Sections General Styling */
+      .section-tag {
+        font-size: 0.8rem;
+        letter-spacing: 0.3em;
+        text-transform: uppercase;
+        color: var(--color-gold-dark);
+        font-weight: 600;
+        margin-bottom: 1rem;
+        display: inline-block;
+        position: relative;
+      }
+
+      .section-title {
+        font-size: 3rem;
+        line-height: 1.2;
+        margin-bottom: 1.5rem;
+        color: var(--color-charcoal);
+      }
+
+      .section-title span {
+        font-family: var(--font-serif);
+        font-weight: 300;
+        font-style: italic;
+        color: var(--color-gold);
+      }
+
+      .section-desc {
+        max-width: 600px;
+        color: var(--color-olive-dark);
+        margin-bottom: 4rem;
+        font-size: 1.05rem;
+      }
+
+      .title-center {
+        text-align: center;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      /* Editorial Asymmetric Section Separator */
+      .editorial-separator {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1.5rem;
+        margin: 4rem 0;
+      }
+
+      .editorial-line {
+        height: 1px;
+        background: linear-gradient(90deg, transparent, var(--color-gold) 50%, transparent);
+        flex-grow: 1;
+        max-width: 150px;
+      }
+
+      .editorial-icon {
+        font-family: var(--font-serif);
+        font-size: 1.5rem;
+        color: var(--color-gold-dark);
+        font-style: italic;
+      }
+
+      /* O Nas Section */
+      #o-nas {
+        background-color: var(--color-white);
+        overflow: hidden;
+      }
+
+      .about-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 5rem;
+        align-items: center;
+      }
+
+      @media (min-width: 992px) {
+        .about-grid {
+          grid-template-columns: 1.1fr 0.9fr;
+        }
+      }
+
+      .about-text h3 {
+        font-size: 2.2rem;
+        line-height: 1.3;
+        margin-bottom: 2rem;
+        font-style: italic;
+        color: var(--color-olive-dark);
+      }
+
+      .about-text p {
+        margin-bottom: 1.8rem;
+        font-size: 1.05rem;
+        color: var(--color-text);
+      }
+
+      .about-highlights {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        margin-top: 3rem;
+      }
+
+      .highlight-card {
+        background-color: var(--color-cream-light);
+        border: 1px dashed var(--color-cream-dark);
+        border-radius: 16px;
+        padding: 1.5rem;
+        transition: var(--transition-soft);
+      }
+
+      .highlight-card:hover {
+        transform: translateY(-5px);
+        border-color: var(--color-gold);
+        background-color: var(--color-white);
+        box-shadow: 0 15px 30px rgba(197, 160, 89, 0.08);
+      }
+
+      .highlight-num {
+        font-family: var(--font-serif);
+        font-size: 2.5rem;
+        color: var(--color-gold);
+        line-height: 1;
+        margin-bottom: 0.5rem;
+        font-weight: 500;
+      }
+
+      .highlight-title {
+        font-weight: 600;
+        font-size: 0.85rem;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        color: var(--color-charcoal);
+        margin-bottom: 0.3rem;
+      }
+
+      .highlight-desc {
+        font-size: 0.8rem;
+        color: var(--color-olive-dark);
+        line-height: 1.5;
+      }
+
+      /* Editorial Floating Images Collage */
+      .about-images-collage {
+        position: relative;
+        height: 520px;
+        width: 100%;
+      }
+
+      .collage-img-wrapper {
+        position: absolute;
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: 0 20px 40px rgba(79, 93, 79, 0.12);
+        border: 4px solid var(--color-white);
+        transition: var(--transition-soft);
+      }
+
+      .collage-img-wrapper img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: var(--transition-soft);
+      }
+
+      .collage-img-wrapper:hover {
+        transform: scale(1.03) translateY(-10px);
+        box-shadow: 0 30px 50px rgba(197, 160, 89, 0.2);
+        z-index: 10 !important;
+      }
+
+      .collage-1 {
+        width: 65%;
+        height: 380px;
+        top: 0;
+        left: 0;
+        z-index: 2;
+      }
+
+      .collage-2 {
+        width: 55%;
+        height: 320px;
+        bottom: 0;
+        right: 0;
+        z-index: 1;
+        border-color: var(--color-cream-light);
+      }
+
+      .collage-decor {
+        position: absolute;
+        top: -30px;
+        right: 40px;
+        width: 120px;
+        height: 120px;
+        z-index: 0;
+        opacity: 0.4;
+        animation: floatAnim 6s infinite ease-in-out;
+      }
+
+      @keyframes floatAnim {
+        0%, 100% { transform: translateY(0) rotate(0deg); }
+        50% { transform: translateY(-15px) rotate(10deg); }
+      }
+
+      /* Oferta Section */
+      #oferta {
+        background-color: var(--color-cream);
+      }
+
+      .oferta-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2.5rem;
+      }
+
+      @media (min-width: 576px) {
+        .oferta-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+
+      @media (min-width: 992px) {
+        .oferta-grid {
+          grid-template-columns: repeat(4, 1fr);
+        }
+      }
+
+      .oferta-card {
+        background-color: var(--color-white);
+        border-radius: 24px;
+        padding: 2.5rem 2rem;
+        border: 1px solid rgba(240, 228, 215, 0.6);
+        transition: var(--transition-soft);
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        min-height: 340px;
+        box-shadow: 0 10px 30px rgba(79, 93, 79, 0.03);
+      }
+
+      .oferta-card::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 4px;
+        background: linear-gradient(90deg, var(--color-pink), var(--color-gold));
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: var(--transition-soft);
+      }
+
+      .oferta-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 20px 45px rgba(197, 160, 89, 0.12);
+        border-color: var(--color-pink-dark);
+      }
+
+      .oferta-card:hover::before {
+        transform: scaleX(1);
+      }
+
+      .oferta-icon-circle {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background-color: var(--color-pink-light);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.8rem;
+        margin-bottom: 1.8rem;
+        transition: var(--transition-soft);
+      }
+
+      .oferta-card:hover .oferta-icon-circle {
+        transform: scale(1.1) rotate(10deg);
+        background-color: var(--color-pink);
+      }
+
+      .oferta-card-content h3 {
+        font-size: 1.5rem;
+        font-weight: 500;
+        color: var(--color-charcoal);
+        margin-bottom: 1rem;
+        line-height: 1.3;
+      }
+
+      .oferta-card-content p {
+        font-size: 0.9rem;
+        color: var(--color-olive-dark);
+        line-height: 1.6;
+        margin-bottom: 1.5rem;
+      }
+
+      .oferta-card-action {
+        font-size: 0.75rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.12em;
+        color: var(--color-gold-dark);
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        transition: var(--transition-fast);
+        margin-top: auto;
+      }
+
+      .oferta-card:hover .oferta-card-action {
+        color: var(--color-olive);
+        transform: translateX(5px);
+      }
+
+      /* Online Order Notification Banner */
+      .online-order-banner {
+        margin-top: 5rem;
+        background: linear-gradient(135deg, var(--color-white) 0%, var(--color-peach) 100%);
+        border: 1px solid var(--color-peach-dark);
+        border-radius: 30px;
+        padding: 3rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        gap: 2rem;
+        box-shadow: 0 15px 35px rgba(197, 160, 89, 0.05);
+      }
+
+      @media (min-width: 992px) {
+        .online-order-banner {
+          flex-direction: row;
+          padding: 3.5rem 5rem;
+        }
+      }
+
+      .banner-info {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+      }
+
+      .banner-icon {
+        font-size: 3.5rem;
+        color: var(--color-gold);
+        line-height: 1;
+      }
+
+      .banner-text h4 {
+        font-size: 1.6rem;
+        font-weight: 500;
+        margin-bottom: 0.5rem;
+        color: var(--color-charcoal);
+      }
+
+      .banner-text p {
+        color: var(--color-olive-dark);
+        font-size: 1rem;
+      }
+
+      /* Opinie Section */
+      #opinie {
+        background-color: var(--color-white);
+      }
+
+      .opinie-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 3rem;
+        margin-bottom: 5rem;
+      }
+
+      @media (min-width: 768px) {
+        .opinie-grid {
+          grid-template-columns: repeat(3, 1fr);
+        }
+      }
+
+      .opinia-card {
+        background-color: var(--color-cream-light);
+        border: 1px solid rgba(240, 228, 215, 0.5);
+        border-radius: 24px;
+        padding: 3rem 2.5rem;
+        transition: var(--transition-soft);
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+
+      .opinia-card::before {
+        content: '“';
+        position: absolute;
+        top: 1rem;
+        right: 2.5rem;
+        font-family: var(--font-serif);
+        font-size: 6rem;
+        color: var(--color-pink-dark);
+        opacity: 0.3;
+        line-height: 1;
+      }
+
+      .opinia-card:hover {
+        transform: translateY(-5px);
+        background-color: var(--color-white);
+        box-shadow: 0 20px 40px rgba(197, 160, 89, 0.08);
+        border-color: var(--color-gold-light);
+      }
+
+      .stars {
+        color: var(--color-gold);
+        margin-bottom: 1.5rem;
+        font-size: 1.1rem;
+        letter-spacing: 0.2em;
+      }
+
+      .opinia-text {
+        font-family: var(--font-serif);
+        font-size: 1.25rem;
+        line-height: 1.6;
+        font-style: italic;
+        color: var(--color-charcoal);
+        margin-bottom: 2rem;
+      }
+
+      .opinia-author {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+      }
+
+      .author-avatar {
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        background-color: var(--color-pink);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 700;
+        font-size: 0.9rem;
+        color: var(--color-olive-dark);
+        border: 2px solid var(--color-white);
+        box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      }
+
+      .author-info h4 {
+        font-family: var(--font-sans);
+        font-size: 0.9rem;
+        font-weight: 600;
+        color: var(--color-charcoal);
+      }
+
+      .author-info p {
+        font-size: 0.75rem;
+        color: var(--color-olive);
+        letter-spacing: 0.05em;
+      }
+
+      .opinie-action {
+        text-align: center;
+      }
+
+      /* Dlaczego My Section */
+      #dlaczego-my {
+        background-color: var(--color-sage-light);
+      }
+
+      .why-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2rem;
+      }
+
+      @media (min-width: 576px) {
+        .why-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+
+      @media (min-width: 992px) {
+        .why-grid {
+          grid-template-columns: repeat(4, 1fr);
+        }
+      }
+
+      .why-card {
+        background-color: var(--color-white);
+        border-radius: 20px;
+        padding: 2.5rem 2rem;
+        border: 1px solid rgba(203, 218, 208, 0.4);
+        transition: var(--transition-soft);
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .why-card:hover {
+        transform: translateY(-5px);
+        border-color: var(--color-olive);
+        box-shadow: 0 15px 35px rgba(79, 93, 79, 0.08);
+      }
+
+      /* Beautiful CSS-only botanical checks */
+      .why-icon {
+        width: 54px;
+        height: 54px;
+        border-radius: 50%;
+        background-color: var(--color-sage);
+        color: var(--color-olive-dark);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 1.5rem;
+        transition: var(--transition-soft);
+        position: relative;
+      }
+
+      .why-card:hover .why-icon {
+        background-color: var(--color-olive);
+        color: var(--color-white);
+        transform: scale(1.1);
+      }
+
+      /* Custom Checkmark CSS */
+      .checkmark-svg {
+        width: 20px;
+        height: 20px;
+        fill: none;
+        stroke: currentColor;
+        stroke-width: 3;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .why-card h3 {
+        font-family: var(--font-sans);
+        font-weight: 600;
+        font-size: 1rem;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: var(--color-charcoal);
+        margin-bottom: 0.8rem;
+      }
+
+      .why-card p {
+        font-size: 0.85rem;
+        color: var(--color-olive-dark);
+        line-height: 1.6;
+      }
+
+      /* Galeria Section (Expandable Gallery) */
+      #galeria {
+        background-color: var(--color-white);
+      }
+
+      /* Checkbox hack wrapper */
+      .gallery-expand-control {
+        display: none;
+      }
+
+      /* Grid structure */
+      .gallery-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2rem;
+      }
+
+      @media (min-width: 576px) {
+        .gallery-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+
+      @media (min-width: 992px) {
+        .gallery-grid {
+          grid-template-columns: repeat(3, 1fr);
+        }
+      }
+
+      /* Luxurious Gallery Item */
+      .gallery-item {
+        background-color: var(--color-cream-light);
+        border: 1px solid rgba(240, 228, 215, 0.4);
+        border-radius: 20px;
+        overflow: hidden;
+        position: relative;
+        height: 420px; /* Elegant frame height */
+        padding: 1.5rem; /* Creates elegant border frame */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: var(--transition-soft);
+        box-shadow: 0 10px 25px rgba(0,0,0,0.02);
+      }
+
+      .gallery-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain; /* AS REQUESTED: strict contain, preserve aspect ratio */
+        transition: var(--transition-soft);
+        border-radius: 12px;
+      }
+
+      .gallery-item-overlay {
+        position: absolute;
+        bottom: 1.5rem;
+        left: 1.5rem;
+        right: 1.5rem;
+        background: linear-gradient(0deg, rgba(44, 47, 44, 0.85) 0%, rgba(44, 47, 44, 0) 100%);
+        border-radius: 0 0 12px 12px;
+        padding: 2.5rem 1.5rem 1.5rem 1.5rem;
+        opacity: 0;
+        transition: var(--transition-soft);
+        transform: translateY(10px);
+      }
+
+      .gallery-item-overlay h4 {
+        color: var(--color-white);
+        font-family: var(--font-serif);
+        font-size: 1.4rem;
+        font-style: italic;
+        margin-bottom: 0.2rem;
+      }
+
+      .gallery-item-overlay p {
+        color: var(--color-pink);
+        font-size: 0.75rem;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+      }
+
+      /* Hover effects */
+      .gallery-item:hover {
+        transform: translateY(-8px);
+        border-color: var(--color-gold);
+        background-color: var(--color-white);
+        box-shadow: 0 20px 40px rgba(197, 160, 89, 0.12);
+      }
+
+      .gallery-item:hover img {
+        transform: scale(1.03);
+      }
+
+      .gallery-item:hover .gallery-item-overlay {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      /* Hidden items styling */
+      .gallery-extended-container {
+        max-height: 0;
+        opacity: 0;
+        overflow: hidden;
+        transition: max-height 1.2s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.8s ease;
+      }
+
+      /* Active expanding state via Checkbox Hack */
+      .gallery-expand-control:checked ~ .gallery-extended-container {
+        max-height: 5000px; /* Large enough to hold the remaining 9 items */
+        opacity: 1;
+        margin-top: 2rem;
+      }
+
+      /* Interactive buttons */
+      .gallery-buttons-wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+        margin-top: 4rem;
+      }
+
+      .btn-expand-label {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1.1rem 2.4rem;
+        font-family: var(--font-sans);
+        font-size: 0.8rem;
+        font-weight: 500;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: var(--transition-soft);
+        background-color: var(--color-white);
+        color: var(--color-olive-dark);
+        border: 1px solid var(--color-olive);
+        box-shadow: 0 10px 25px -5px rgba(110, 127, 110, 0.1);
+      }
+
+      .btn-expand-label:hover {
+        background-color: var(--color-olive);
+        color: var(--color-white);
+        transform: translateY(-3px);
+        box-shadow: 0 15px 30px -5px rgba(110, 127, 110, 0.3);
+      }
+
+      /* Change label visual when checked */
+      .gallery-expand-control:checked ~ .gallery-buttons-wrap .btn-expand-label {
+        display: none; /* Hide trigger after expand */
+      }
+
+      /* Kontakt & Mapa Section */
+      #kontakt {
+        background-color: var(--color-cream);
+      }
+
+      .kontakt-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 4rem;
+        align-items: stretch;
+      }
+
+      @media (min-width: 992px) {
+        .kontakt-grid {
+          grid-template-columns: 1fr 1.1fr;
+        }
+      }
+
+      .kontakt-info-card {
+        background-color: var(--color-white);
+        border-radius: 28px;
+        padding: 4rem 3.5rem;
+        border: 1px solid rgba(240, 228, 215, 0.7);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        box-shadow: 0 15px 35px rgba(79, 93, 79, 0.04);
+      }
+
+      .kontakt-heading h3 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+        color: var(--color-charcoal);
+      }
+
+      .kontakt-heading p {
+        color: var(--color-olive-dark);
+        font-size: 1rem;
+        margin-bottom: 3rem;
+      }
+
+      .kontakt-details {
+        display: flex;
+        flex-direction: column;
+        gap: 2.5rem;
+        margin-bottom: 3rem;
+      }
+
+      .detail-item {
+        display: flex;
+        gap: 1.5rem;
+        align-items: flex-start;
+      }
+
+      .detail-icon-box {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: var(--color-peach);
+        color: var(--color-gold-dark);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        font-size: 1.2rem;
+      }
+
+      .detail-content h4 {
+        font-family: var(--font-sans);
+        font-size: 0.8rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        color: var(--color-olive);
+        margin-bottom: 0.4rem;
+      }
+
+      .detail-content p, .detail-content a {
+        font-size: 1.15rem;
+        font-weight: 500;
+        color: var(--color-charcoal);
+        line-height: 1.4;
+      }
+
+      .detail-content a:hover {
+        color: var(--color-gold-dark);
+        transform: translateX(3px);
+      }
+
+      .opening-hours {
+        border-top: 1px dashed var(--color-cream-dark);
+        padding-top: 2rem;
+      }
+
+      .opening-hours h4 {
+        font-family: var(--font-sans);
+        font-size: 0.8rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        color: var(--color-olive);
+        margin-bottom: 0.8rem;
+      }
+
+      .opening-hours-list {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        font-size: 0.9rem;
+      }
+
+      .hours-row {
+        display: flex;
+        justify-content: space-between;
+        color: var(--color-text);
+      }
+
+      .hours-row.highlighted {
+        font-weight: 600;
+        color: var(--color-gold-dark);
+      }
+
+      /* Beautiful map wrapper */
+      .map-wrapper {
+        border-radius: 28px;
+        overflow: hidden;
+        border: 4px solid var(--color-white);
+        box-shadow: 0 20px 45px rgba(79, 93, 79, 0.1);
+        height: 100%;
+        min-height: 450px;
+        position: relative;
+      }
+
+      .map-wrapper iframe {
+        width: 100%;
+        height: 100%;
+        min-height: 450px;
+        display: block;
+      }
+
+      /* CTA Banner (Large Section) */
+      #cta-banner {
+        background-color: var(--color-olive);
+        color: var(--color-white);
+        text-align: center;
+        padding: 9rem 0;
+        position: relative;
+        overflow: hidden;
+      }
+
+      /* Decorative botanical background shapes via CSS gradients */
+      #cta-banner::before {
+        content: '';
+        position: absolute;
+        top: -200px;
+        left: -200px;
+        width: 500px;
+        height: 500px;
+        border-radius: 50%;
+        background: radial-gradient(circle, rgba(197, 160, 89, 0.1) 0%, rgba(197, 160, 89, 0) 70%);
+        z-index: 0;
+      }
+
+      #cta-banner::after {
+        content: '';
+        position: absolute;
+        bottom: -200px;
+        right: -200px;
+        width: 500px;
+        height: 500px;
+        border-radius: 50%;
+        background: radial-gradient(circle, rgba(247, 225, 227, 0.15) 0%, rgba(247, 225, 227, 0) 70%);
+        z-index: 0;
+      }
+
+      .cta-content {
+        max-width: 800px;
+        margin: 0 auto;
+        position: relative;
+        z-index: 1;
+      }
+
+      .cta-content h2 {
+        color: var(--color-white);
+        font-size: 3.5rem;
+        line-height: 1.2;
+        margin-bottom: 1.5rem;
+      }
+
+      .cta-content p {
+        font-family: var(--font-serif);
+        font-size: 1.6rem;
+        font-weight: 300;
+        font-style: italic;
+        color: var(--color-pink-light);
+        margin-bottom: 3.5rem;
+        line-height: 1.5;
+        opacity: 0.95;
+      }
+
+      .cta-buttons {
+        display: flex;
+        justify-content: center;
+        gap: 1.5rem;
+        flex-wrap: wrap;
+      }
+
+      .btn-cta-white {
+        background-color: var(--color-white);
+        color: var(--color-olive-dark);
+      }
+
+      .btn-cta-white:hover {
+        background-color: var(--color-pink-light);
+        color: var(--color-charcoal);
+        transform: translateY(-3px);
+        box-shadow: 0 15px 30px rgba(255,255,255,0.25);
+      }
+
+      .btn-cta-outline {
+        background-color: transparent;
+        color: var(--color-white);
+        border-color: rgba(255,255,255,0.4);
+      }
+
+      .btn-cta-outline:hover {
+        background-color: rgba(255,255,255,0.1);
+        border-color: var(--color-white);
+        transform: translateY(-3px);
+      }
+
+      /* Stopka (Footer) */
+      footer {
+        background-color: var(--color-charcoal);
+        color: var(--color-sage-dark);
+        padding: 4rem 0;
+        font-size: 0.9rem;
+        border-top: 1px solid rgba(255, 255, 255, 0.05);
+      }
+
+      .footer-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        gap: 2rem;
+        max-width: 1300px;
+        margin: 0 auto;
+        padding: 0 2rem;
+      }
+
+      @media (min-width: 768px) {
+        .footer-container {
+          flex-direction: row;
+        }
+      }
+
+      .footer-logo {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+      }
+
+      .footer-logo-img {
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 2px solid rgba(255, 255, 255, 0.2);
+      }
+
+      .footer-logo-text {
+        font-family: var(--font-serif);
+        font-size: 1.3rem;
+        color: var(--color-white);
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+      }
+
+      .footer-logo-text span {
+        color: var(--color-gold);
+        font-weight: 300;
+      }
+
+      .footer-copy {
+        text-align: center;
+        font-size: 0.8rem;
+        letter-spacing: 0.05em;
+      }
+
+      .footer-links {
+        display: flex;
+        gap: 1.5rem;
+      }
+
+      .footer-links a {
+        color: var(--color-sage-dark);
+        transition: var(--transition-fast);
+      }
+
+      .footer-links a:hover {
+        color: var(--color-white);
+      }
+
+      /* Mobile Navigation Overlay using CSS Hack */
+      @media (max-width: 991px) {
+        .header-container {
+          height: 80px;
+        }
+        
+        /* Mobile hamburger menu */
+        .menu-icon {
+          display: block;
+          cursor: pointer;
+          padding: 10px;
+          z-index: 1010;
+        }
+
+        .menu-icon .nav-icon {
+          background-color: var(--color-olive-dark);
+          display: block;
+          height: 2px;
+          position: relative;
+          transition: background 0.2s ease-out;
+          width: 24px;
+        }
+
+        .menu-icon .nav-icon::before,
+        .menu-icon .nav-icon::after {
+          background-color: var(--color-olive-dark);
+          content: '';
+          display: block;
+          height: 100%;
+          position: absolute;
+          transition: all 0.2s ease-out;
+          width: 100%;
+        }
+
+        .menu-icon .nav-icon::before {
+          top: 6px;
+        }
+
+        .menu-icon .nav-icon::after {
+          top: -6px;
+        }
+
+        /* Checkbox hack mechanics */
+        nav {
+          position: fixed;
+          top: 0;
+          right: -100%;
+          width: 100%;
+          height: 100vh;
+          background: var(--color-cream-light);
+          z-index: 1001;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          transition: var(--transition-soft);
+          box-shadow: -10px 0 30px rgba(0,0,0,0.05);
+        }
+
+        nav ul {
+          flex-direction: column;
+          gap: 2rem;
+          text-align: center;
+        }
+
+        nav a {
+          font-size: 1.2rem;
+        }
+
+        .menu-btn:checked ~ nav {
+          right: 0;
+        }
+
+        /* Animate Hamburguer to Close */
+        .menu-btn:checked ~ .menu-icon .nav-icon {
+          background: transparent;
+        }
+
+        .menu-btn:checked ~ .menu-icon .nav-icon::before {
+          transform: rotate(-45deg);
+          top: 0;
+        }
+
+        .menu-btn:checked ~ .menu-icon .nav-icon::after {
+          transform: rotate(45deg);
+          top: 0;
+        }
+
+        /* Hide menu when anchor is clicked (handled via CSS hack can't close natively without JS, but the close button exists or they can just toggle the checkbox. On same-page links, closing on navigation can be done via checkbox or the user manually toggles it. For mobile users we can provide a small visual instruction or it naturally fits standard behavior). */
+      }
+    </style>
+  </head>
+  <body>
+
+    <!-- Header Navigation -->
+    <header>
+      <div class="header-container">
+        <a href="#hero" class="logo-link">
+          <img src="https://i.ibb.co/TMpVb6pm/615119126-122158590536803331-4099207766409801-n.jpg" alt="Kwiaciarnia MAGDA" class="logo-img">
+          <div class="logo-text">Kwiaciarnia <span>Magda</span></div>
+        </a>
+
+        <!-- Checkbox Hack for Mobile Menu Toggle -->
+        <input class="menu-btn" type="checkbox" id="menu-btn" style="display: none;" />
+        <label class="menu-icon" for="menu-btn">
+          <span class="nav-icon"></span>
+        </label>
+
+        <nav>
+          <ul>
+            <li><a href="#hero">Start</a></li>
+            <li><a href="#o-nas">O Nas</a></li>
+            <li><a href="#oferta">Oferta</a></li>
+            <li><a href="#opinie">Opinie</a></li>
+            <li><a href="#dlaczego-my">Dlaczego My</a></li>
+            <li><a href="#galeria">Galeria</a></li>
+            <li><a href="#kontakt">Kontakt</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+      <div class="hero-overlay"></div>
+      <div class="container" style="position: relative; z-index: 2;">
+        <div class="hero-content">
+          <div class="hero-logo-container">
+            <img src="https://i.ibb.co/TMpVb6pm/615119126-122158590536803331-4099207766409801-n.jpg" alt="Logo Kwiaciarnia Magda" class="hero-logo">
+          </div>
+          <span class="hero-subtitle-top">Autorska Pracownia Florystyczna</span>
+          <h1>Kwiaciarnia <span>MAGDA</span></h1>
+          <p class="hero-desc">Podaruj emocje w bukiecie. Wyjątkowe kompozycje kwiatowe tworzone z pasją i sercem na każdą okazję.</p>
+          
+          <div class="hero-actions">
+            <a href="#galeria" class="btn btn-primary">Zobacz galerię</a>
+            <a href="#kontakt" class="btn btn-outline">Zamów kompozycję</a>
+          </div>
+
+          <div class="hero-badges">
+            <div class="badge-item">
+              <span>🌸</span> Świeże kwiaty
+            </div>
+            <div class="badge-item">
+              <span>💐</span> Bukiety okolicznościowe
+            </div>
+            <div class="badge-item">
+              <span>🎁</span> Kompozycje premium
+            </div>
+            <div class="badge-item">
+              <span>🚚</span> Wysyłka w Polsce
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="scroll-indicator">
+        <span>Odkryj piękno</span>
+        <div class="scroll-mouse">
+          <div class="scroll-wheel"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- O Nas Section -->
+    <section id="o-nas">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-text">
+            <span class="section-tag">Nasza Historia i Pasja</span>
+            <h2 class="section-title">Miejsce tworzone z <span>miłości do kwiatów</span></h2>
+            <h3>Gdzie florystyka staje się sztuką wyrażania najgłębszych ludzkich emocji.</h3>
+            <p>Kwiaciarnia MAGDA powstała z niegasnącego zachwytu nad pięknem natury. Nasza pracownia to nie zwykły sklep z kwiatami — to luksusowa przestrzeń florystyczna, w której łączymy wieloletnie rzemiosło z najnowszymi trendami światowego designu botanicznego.</p>
+            <p>Każdy bukiet opuszczający naszą pracownię to unikalne dzieło sztuki florystycznej. Wyróżnia nas perfekcyjne, rzemieślnicze podejście, bezkompromisowa dbałość o świeżość i oryginalne, rzadko spotykane gatunki roślin.</p>
+            
+            <div class="about-highlights">
+              <div class="highlight-card">
+                <div class="highlight-num">100%</div>
+                <div class="highlight-title">Świeżość</div>
+                <div class="highlight-desc">Kwiaty sprowadzane bezpośrednio z giełd krajowych i holenderskich każdego poranka.</div>
+              </div>
+              <div class="highlight-card">
+                <div class="highlight-num">Indywidualność</div>
+                <div class="highlight-title">Styl i Wizja</div>
+                <div class="highlight-desc">Nie pracujemy na szablonach. Kompozycje dopasowujemy do charakteru obdarowywanej osoby.</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-images-collage">
+            <!-- Styling plant decoration element -->
+            <svg class="collage-decor" viewBox="0 0 100 100">
+              <path d="M50 10 C30 30 10 50 10 70 C10 85 25 90 50 90 C75 90 90 85 90 70 C90 50 70 30 50 10" fill="none" stroke="var(--color-gold-light)" stroke-width="1.5" stroke-dasharray="3 3"/>
+              <path d="M50 20 C40 35 30 50 30 65 C30 75 40 80 50 80 C60 80 70 75 70 65 C70 50 60 35 50 20" fill="none" stroke="var(--color-pink-dark)" stroke-width="1"/>
+            </svg>
+            <div class="collage-img-wrapper collage-1" style="z-index: 2;">
+              <img src="https://i.ibb.co/39Q3wB6v/646578165-122163662780803331-7595001795767230132-n.jpg" alt="Florystka przy pracy — Kwiaciarnia Magda">
+            </div>
+            <div class="collage-img-wrapper collage-2" style="z-index: 1;">
+              <img src="https://i.ibb.co/ynCDh1vj/647618000-122163662738803331-7426167945664233285-n.jpg" alt="Luksusowa kompozycja florystyczna">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Oferta Section -->
+    <section id="oferta">
+      <div class="container">
+        <div class="title-center">
+          <span class="section-tag">Nasza Oferta</span>
+          <h2 class="section-title">Kompozycje kwiatowe <span>szyte na miarę</span></h2>
+          <p class="section-desc">Łączymy romantyczną klasykę z nowoczesnymi trendami florystycznymi. Poznaj szeroki wachlarz naszych usług.</p>
+        </div>
+
+        <div class="oferta-grid">
+          <!-- Card 1 -->
+          <div class="oferta-card">
+            <div class="oferta-card-top">
+              <div class="oferta-icon-circle">🌹</div>
+              <div class="oferta-card-content">
+                <h3>Bukiety okolicznościowe</h3>
+                <p>Starannie skomponowane bukiety na urodziny, imieniny, rocznice i inne wyjątkowe chwile w życiu.</p>
+              </div>
+            </div>
+            <a href="#kontakt" class="oferta-card-action">Zamów bukiet →</a>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="oferta-card">
+            <div class="oferta-card-top">
+              <div class="oferta-icon-circle">💍</div>
+              <div class="oferta-card-content">
+                <h3>Florystyka ślubna</h3>
+                <p>Kompleksowa oprawa kwiatowa ślubów — bukiety ślubne, butonierki, dekoracje kościołów i sal weselnych.</p>
+              </div>
+            </div>
+            <a href="#kontakt" class="oferta-card-action">Konsultacja →</a>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="oferta-card">
+            <div class="oferta-card-top">
+              <div class="oferta-icon-circle">🕊</div>
+              <div class="oferta-card-content">
+                <h3>Kompozycje pogrzebowe</h3>
+                <p>Pełne szacunku i powagi wieńce, wiązanki oraz dekoracje trumienne w tych trudnych chwilach pożegnania.</p>
+              </div>
+            </div>
+            <a href="#kontakt" class="oferta-card-action">Zamów wieńce →</a>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="oferta-card">
+            <div class="oferta-card-top">
+              <div class="oferta-icon-circle">🎁</div>
+              <div class="oferta-card-content">
+                <h3>Upominki kwiatowe</h3>
+                <p>Wyjątkowe, estetyczne połączenia kwiatów z eleganckimi dodatkami, idealne na luksusowy prezent.</p>
+              </div>
+            </div>
+            <a href="#kontakt" class="oferta-card-action">Zobacz opcje →</a>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="oferta-card">
+            <div class="oferta-card-top">
+              <div class="oferta-icon-circle">🌸</div>
+              <div class="oferta-card-content">
+                <h3>Stylowe dekoracje</h3>
+                <p>Aranżacje wnętrz, hoteli, butików i restauracji, które ożywią przestrzeń i nadadzą jej luksusowy klimat.</p>
+              </div>
+            </div>
+            <a href="#kontakt" class="oferta-card-action">Zapytaj o wycenę →</a>
+          </div>
+
+          <!-- Card 6 -->
+          <div class="oferta-card">
+            <div class="oferta-card-top">
+              <div class="oferta-icon-circle">🌿</div>
+              <div class="oferta-card-content">
+                <h3>Kwiaty żywe</h3>
+                <p>Świeże, pachnące kwiaty i rośliny doniczkowe układane w artystyczne, rzeźbiarskie formy o wielkiej trwałości.</p>
+              </div>
+            </div>
+            <a href="#kontakt" class="oferta-card-action">Wybierz kwiaty →</a>
+          </div>
+
+          <!-- Card 7 -->
+          <div class="oferta-card">
+            <div class="oferta-card-top">
+              <div class="oferta-icon-circle">🌼</div>
+              <div class="oferta-card-content">
+                <h3>Kompozycje sztuczne</h3>
+                <p>Wysokiej jakości dekoracje całoroczne z kwiatów sztucznych, które do złudzenia przypominają żywe rośliny.</p>
+              </div>
+            </div>
+            <a href="#kontakt" class="oferta-card-action">Zobacz kompozycje →</a>
+          </div>
+
+          <!-- Card 8 -->
+          <div class="oferta-card">
+            <div class="oferta-card-top">
+              <div class="oferta-icon-circle">❤️</div>
+              <div class="oferta-card-content">
+                <h3>Na każdą okazję</h3>
+                <p>Personalizowane dzieła, które mówią więcej niż tysiąc słów — z sercem dopasowane do każdej intencji.</p>
+              </div>
+            </div>
+            <a href="#kontakt" class="oferta-card-action">Zaprojektuj bukiet →</a>
+          </div>
+        </div>
+
+        <!-- Banner wysyłkowy -->
+        <div class="online-order-banner">
+          <div class="banner-info">
+            <div class="banner-icon">🚚</div>
+            <div class="banner-text">
+              <h4>Zamówienia Online & Wysyłka na terenie całej Polski</h4>
+              <p>Chcesz sprawić komuś radość na odległość? Realizujemy profesjonalną i bezpieczną wysyłkę kompozycji kwiatowych pod wskazany adres na terenie całego kraju.</p>
+            </div>
+          </div>
+          <a href="#kontakt" class="btn btn-primary" style="white-space: nowrap;">Złóż zamówienie</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Opinie Section -->
+    <section id="opinie">
+      <div class="container">
+        <div class="title-center">
+          <span class="section-tag">Co Mówią Klienci</span>
+          <h2 class="section-title">Opinie o <span>naszej pracowni</span></h2>
+          <p class="section-desc">Największą satysfakcją jest dla nas uśmiech obdarowanych osób oraz zaufanie powracających klientów.</p>
+        </div>
+
+        <div class="opinie-grid">
+          <!-- Opinia 1 -->
+          <div class="opinia-card">
+            <div>
+              <div class="stars">⭐⭐⭐⭐⭐</div>
+              <p class="opinia-text">„Pani Madzia to bardzo dobra florystka. Jej prace jeszcze nigdy mnie nie zawiodły. Potrafi sprostać nawet bardzo wymyślnym kompozycjom. Polecam z całego serca.”</p>
+            </div>
+            <div class="opinia-author">
+              <div class="author-avatar">A</div>
+              <div class="author-info">
+                <h4>Klient Kwiaciarni</h4>
+                <p>Opinia zweryfikowana</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Opinia 2 -->
+          <div class="opinia-card">
+            <div>
+              <div class="stars">⭐⭐⭐⭐⭐</div>
+              <p class="opinia-text">„Bardzo ładne kompozycje. Cena przystępna. Polecam serdecznie.”</p>
+            </div>
+            <div class="opinia-author">
+              <div class="author-avatar">J</div>
+              <div class="author-info">
+                <h4>Klient Kwiaciarni</h4>
+                <p>Opinia zweryfikowana</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Opinia 3 -->
+          <div class="opinia-card">
+            <div>
+              <div class="stars">⭐⭐⭐⭐⭐</div>
+              <p class="opinia-text">„Miła obsługa, wykonane kompozycje zawsze robią duże pozytywne wrażenie. Polecam.”</p>
+            </div>
+            <div class="opinia-author">
+              <div class="author-avatar">M</div>
+              <div class="author-info">
+                <h4>Klient Kwiaciarni</h4>
+                <p>Opinia zweryfikowana</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="opinie-action">
+          <a href="https://www.facebook.com/profile.php?id=61574099955309&sk=reviews" target="_blank" rel="noopener noreferrer" class="btn btn-outline">Zobacz więcej opinii na Facebooku</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Dlaczego My Section -->
+    <section id="dlaczego-my">
+      <div class="container">
+        <div class="title-center">
+          <span class="section-tag">Nasz Standard</span>
+          <h2 class="section-title">Dlaczego <span>wybrać Kwiaciarnię MAGDA?</span></h2>
+          <p class="section-desc">Każdego dnia dokładamy wszelkich starań, aby jakość naszych kompozycji oraz poziom obsługi zachwycały najbardziej wymagających miłośników piękna.</p>
+        </div>
+
+        <div class="why-grid">
+          <!-- Item 1 -->
+          <div class="why-card">
+            <div class="why-icon">
+              <svg class="checkmark-svg" viewBox="0 0 24 24">
+                <polyline points="20 6 9 17 4 12" />
+              </svg>
+            </div>
+            <h3>Świeże kwiaty</h3>
+            <p>Selekcjonowane osobiście o świcie, aby zachowały nienaganny wygląd i zapach przez długi czas.</p>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="why-card">
+            <div class="why-icon">
+              <svg class="checkmark-svg" viewBox="0 0 24 24">
+                <polyline points="20 6 9 17 4 12" />
+              </svg>
+            </div>
+            <h3>Indywidualne projekty</h3>
+            <p>Rozmawiamy o emocjach, marzeniach i preferencjach, tworząc kompozycje jedyne w swoim rodzaju.</p>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="why-card">
+            <div class="why-icon">
+              <svg class="checkmark-svg" viewBox="0 0 24 24">
+                <polyline points="20 6 9 17 4 12" />
+              </svg>
+            </div>
+            <h3>Piękne kompozycje</h3>
+            <p>Harmonijny dobór barw, struktur oraz form nawiązujący do najbardziej wykwintnych nurtów florystyki.</p>
+          </div>
+
+          <!-- Item 4 -->
+          <div class="why-card">
+            <div class="why-icon">
+              <svg class="checkmark-svg" viewBox="0 0 24 24">
+                <polyline points="20 6 9 17 4 12" />
+              </svg>
+            </div>
+            <h3>Wieloletnie Doświadczenie</h3>
+            <p>Szlachetny kunszt florystyczny dopracowany na przestrzeni lat profesjonalnej praktyki.</p>
+          </div>
+
+          <!-- Item 5 -->
+          <div class="why-card">
+            <div class="why-icon">
+              <svg class="checkmark-svg" viewBox="0 0 24 24">
+                <polyline points="20 6 9 17 4 12" />
+              </svg>
+            </div>
+            <h3>Profesjonalna obsługa</h3>
+            <p>Eksperckie doradztwo, cierpliwość i uśmiech, które towarzyszą każdemu etapowi zamówienia.</p>
+          </div>
+
+          <!-- Item 6 -->
+          <div class="why-card">
+            <div class="why-icon">
+              <svg class="checkmark-svg" viewBox="0 0 24 24">
+                <polyline points="20 6 9 17 4 12" />
+              </svg>
+            </div>
+            <h3>Wysyłka w Polsce</h3>
+            <p>Możliwość wysłania bukietu oraz kompozycji pod dowolny adres na terenie całego kraju.</p>
+          </div>
+
+          <!-- Item 7 -->
+          <div class="why-card">
+            <div class="why-icon">
+              <svg class="checkmark-svg" viewBox="0 0 24 24">
+                <polyline points="20 6 9 17 4 12" />
+              </svg>
+            </div>
+            <h3>Na każdą okazję</h3>
+            <p>Radosne bukiety, szykowne śluby, pełne zadumy kompozycje pożegnalne i stylowe dekoracje wnętrz.</p>
+          </div>
+
+          <!-- Item 8 -->
+          <div class="why-card">
+            <div class="why-icon">
+              <svg class="checkmark-svg" viewBox="0 0 24 24">
+                <polyline points="20 6 9 17 4 12" />
+              </svg>
+            </div>
+            <h3>Miłość do florystyki</h3>
+            <p>Wkładamy duszę w naszą pracę, wierząc, że kwiaty łączą ludzi i potrafią przekazać najczystsze uczucia.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Galeria Section -->
+    <section id="galeria">
+      <div class="container">
+        <div class="title-center">
+          <span class="section-tag">Portfolio Pracowni</span>
+          <h2 class="section-title">Galeria naszych <span>autorskich kompozycji</span></h2>
+          <p class="section-desc">Przeglądaj wybrane realizacje luksusowych bukietów, dekoracji okolicznościowych i artystycznych projektów naszej pracowni.</p>
+        </div>
+
+        <!-- Checkbox Hack for Expandable Gallery (NO JAVASCRIPT) -->
+        <input type="checkbox" id="gallery-expand-toggle" class="gallery-expand-control">
+
+        <!-- Initial 6 Items Grid -->
+        <div class="gallery-grid">
+          <!-- Item 1 -->
+          <div class="gallery-item">
+            <img src="https://i.ibb.co/ynCDh1vj/647618000-122163662738803331-7426167945664233285-n.jpg" alt="Elegancka kompozycja florystyczna - Kwiaciarnia Magda">
+            <div class="gallery-item-overlay">
+              <h4>Romantyczny Róż</h4>
+              <p>Kompozycja Świeża</p>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="gallery-item">
+            <img src="https://i.ibb.co/39Q3wB6v/646578165-122163662780803331-7595001795767230132-n.jpg" alt="Tworzenie bukietów w pracowni">
+            <div class="gallery-item-overlay">
+              <h4>Sztuka Kreacji</h4>
+              <p>Pracownia Magda</p>
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="gallery-item">
+            <img src="https://i.ibb.co/Lhv4P4tb/646768658-122163662822803331-4802370141749419693-n.jpg" alt="Premium bukiet okolicznościowy">
+            <div class="gallery-item-overlay">
+              <h4>Pastelowy Szyk</h4>
+              <p>Bukiet Okolicznościowy</p>
+            </div>
+          </div>
+
+          <!-- Item 4 -->
+          <div class="gallery-item">
+            <img src="https://i.ibb.co/jPp7bmHG/726456344-122174059562803331-5508713189669151539-n.jpg" alt="Białe i kremowe róże">
+            <div class="gallery-item-overlay">
+              <h4>Śnieżna Elegancja</h4>
+              <p>Kompozycja Klasyczna</p>
+            </div>
+          </div>
+
+          <!-- Item 5 -->
+          <div class="gallery-item">
+            <img src="https://i.ibb.co/fsZKq3d/726493667-122174063210803331-8128851232773138459-n.jpg" alt="Stylowa dekoracja z eukaliptusem">
+            <div class="gallery-item-overlay">
+              <h4>Oliwny Ogród</h4>
+              <p>Aranżacja wnętrz</p>
+            </div>
+          </div>
+
+          <!-- Item 6 -->
+          <div class="gallery-item">
+            <img src="https://i.ibb.co/7tsGXz1s/728226084-122174077418803331-4500907891687633432-n.jpg" alt="Luksusowe kwiaty w wazonie">
+            <div class="gallery-item-overlay">
+              <h4>Brzoskwiniowy Świt</h4>
+              <p>Kwiaty i Upominki</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Expandable Container (Remaining 9 items) -->
+        <div class="gallery-extended-container">
+          <div class="gallery-grid">
+            <!-- Item 7 -->
+            <div class="gallery-item">
+              <img src="https://i.ibb.co/mrKNtt1h/727542524-122174168444803331-2616691250521799810-n.jpg" alt="Kompozycja nagrobna premium">
+              <div class="gallery-item-overlay">
+                <h4>Pamięć i Szacunek</h4>
+                <p>Florystyka Funeralna</p>
+              </div>
+            </div>
+
+            <!-- Item 8 -->
+            <div class="gallery-item">
+              <img src="https://i.ibb.co/nskMmG62/729186458-122174174666803331-7866872492460742322-n.jpg" alt="Nowoczesne kwiaty sztuczne">
+              <div class="gallery-item-overlay">
+                <h4>Trwałe Piękno</h4>
+                <p>Kompozycja Trwała</p>
+              </div>
+            </div>
+
+            <!-- Item 9 -->
+            <div class="gallery-item">
+              <img src="https://i.ibb.co/84s8DzrH/732046002-122174576912803331-3638472880539953903-n.jpg" alt="Subtelny pastelowy bukiet">
+              <div class="gallery-item-overlay">
+                <h4>Liliowy Dotyk</h4>
+                <p>Bukiety Okolicznościowe</p>
+              </div>
+            </div>
+
+            <!-- Item 10 -->
+            <div class="gallery-item">
+              <img src="https://i.ibb.co/qbfJtJ1/732986483-122174576960803331-4135575403541941184-n.jpg" alt="Elegancki kosz kwiatowy">
+              <div class="gallery-item-overlay">
+                <h4>Królewski Podarek</h4>
+                <p>Upominki kwiatowe</p>
+              </div>
+            </div>
+
+            <!-- Item 11 -->
+            <div class="gallery-item">
+              <img src="https://i.ibb.co/QjbKZrCC/731808306-122174577014803331-4879720950332091224-n.jpg" alt="Florystyczny stroik na stół">
+              <div class="gallery-item-overlay">
+                <h4>Stół Pełen Słońca</h4>
+                <p>Dekoracje Okolicznościowe</p>
+              </div>
+            </div>
+
+            <!-- Item 12 -->
+            <div class="gallery-item">
+              <img src="https://i.ibb.co/0yCQygB0/733868760-122174787284803331-5508878922727192664-n.jpg" alt="Jesienne inspiracje kwiatowe">
+              <div class="gallery-item-overlay">
+                <h4>Złote Inspiracje</h4>
+                <p>Bukiety Jesienne</p>
+              </div>
+            </div>
+
+            <!-- Item 13 -->
+            <div class="gallery-item">
+              <img src="https://i.ibb.co/gb6n5KCf/733415116-122174787344803331-7701735418385055659-n.jpg" alt="Białe kompozycje kwiatowe">
+              <div class="gallery-item-overlay">
+                <h4>Klasyczny Kontrast</h4>
+                <p>Kompozycje Ekskluzywne</p>
+              </div>
+            </div>
+
+            <!-- Item 14 -->
+            <div class="gallery-item">
+              <img src="https://i.ibb.co/dsRCFtcM/733737277-122174787386803331-3656509098213910080-n.jpg" alt="Subtelny bukiet z róż">
+              <div class="gallery-item-overlay">
+                <h4>Różana Poezja</h4>
+                <p>Bukiety Ślubne</p>
+              </div>
+            </div>
+
+            <!-- Item 15 -->
+            <div class="gallery-item">
+              <img src="https://i.ibb.co/Kc933Rjf/734435322-122174870918803331-167439017497476878-n.jpg" alt="Dekoracje w pastelowych tonach">
+              <div class="gallery-item-overlay">
+                <h4>Kremowy Welon</h4>
+                <p>Florystyka Ślubna</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Buttons at the bottom -->
+        <div class="gallery-buttons-wrap">
+          <label for="gallery-expand-toggle" class="btn-expand-label">Pokaż więcej zdjęć</label>
+          <a href="https://www.facebook.com/profile.php?id=61574099955309" target="_blank" rel="noopener noreferrer" class="btn btn-gold">Więcej zdjęć na Facebooku</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Kontakt & Mapa Section -->
+    <section id="kontakt">
+      <div class="container">
+        <div class="kontakt-grid">
+          <!-- Column 1: Info -->
+          <div class="kontakt-info-card">
+            <div class="kontakt-heading">
+              <span class="section-tag">Kontakt</span>
+              <h3>Odwiedź naszą <span>pracownię</span></h3>
+              <p>Chętnie pomożemy Ci dobrać idealne kompozycje kwiatowe. Zadzwoń do nas, napisz lub odwiedź nas osobiście w Tuszynie.</p>
+            </div>
+
+            <div class="kontakt-details">
+              <!-- Adres -->
+              <div class="detail-item">
+                <div class="detail-icon-box">📍</div>
+                <div class="detail-content">
+                  <h4>Adres Pracowni</h4>
+                  <p>Jagiełły 27<br>95-080 Tuszyn</p>
+                </div>
+              </div>
+
+              <!-- Telefony -->
+              <div class="detail-item">
+                <div class="detail-icon-box">☎</div>
+                <div class="detail-content">
+                  <h4>Zadzwoń do nas</h4>
+                  <p style="margin-bottom: 0.3rem;"><a href="tel:533015042">533 015 042</a></p>
+                  <p><a href="tel:426144201">42 614 42 01</a></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="opening-hours">
+              <h4>Godziny otwarcia</h4>
+              <div class="opening-hours-list">
+                <div class="hours-row">
+                  <span>Poniedziałek - Piątek:</span>
+                  <span>08:00 - 17:00</span>
+                </div>
+                <div class="hours-row">
+                  <span>Sobota:</span>
+                  <span>08:00 - 15:00</span>
+                </div>
+                <div class="hours-row highlighted">
+                  <span>Niedziela (handlowe):</span>
+                  <span>Otwarte na zapytanie</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Column 2: Mapa -->
+          <div class="map-wrapper">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2478.1556758311085!2d19.540955312647753!3d51.60203610366736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471a2fc493fc94f1%3A0xfcaee9f6b36426a3!2sKwiaciarnia%20MAGDA!5e0!3m2!1spl!2spl!4v1783344645314!5m2!1spl!2spl" width="100%" height="100%" style="border:0; width: 100%; height: 100%; min-height: 450px;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="cta-banner">
+      <div class="container">
+        <div class="cta-content">
+          <h2>Podaruj emocje zamknięte w kwiatach.</h2>
+          <p>Skontaktuj się z nami i pozwól stworzyć kompozycję idealną na każdą okazję.</p>
+          <div class="cta-buttons">
+            <a href="tel:533015042" class="btn btn-cta-white">Zadzwoń teraz</a>
+            <a href="https://www.facebook.com/profile.php?id=61574099955309" target="_blank" rel="noopener noreferrer" class="btn btn-cta-outline">Napisz na Facebooku</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stopka -->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-logo">
+          <img src="https://i.ibb.co/TMpVb6pm/615119126-122158590536803331-4099207766409801-n.jpg" alt="Logo Kwiaciarnia Magda" class="footer-logo-img">
+          <div class="footer-logo-text">Kwiaciarnia <span>Magda</span></div>
+        </div>
+        
+        <div class="footer-copy">
+          &copy; 2026 Kwiaciarnia MAGDA. Wszelkie prawa zastrzeżone. | Zaprojektowano z miłości do kwiatów.
+        </div>
+
+        <div class="footer-links">
+          <a href="#hero">Do góry</a>
+          <a href="https://www.facebook.com/profile.php?id=61574099955309" target="_blank" rel="noopener noreferrer">Facebook</a>
+        </div>
+      </div>
+    </footer>
+
+  </body>
+</html>

@@ -1,0 +1,6 @@
+{
+  "name": "Kwiaciarnia MAGDA",
+  "description": "Ekskluzywna pracownia florystyczna w Tuszynie. Podaruj emocje w bukiecie. Wyjątkowe kompozycje kwiatowe tworzone z pasją i sercem na każdą okazję.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
